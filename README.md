@@ -62,8 +62,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
  What is the main advantage of automating configuration with Ansible?
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
- configure web-1,web-2
+-configure web-1,web-2
 -Install ELK server 
 -Install Filebeat 
 -Install Metricbeat
@@ -91,7 +90,6 @@ SSH into the control node and follow the steps below:
 - Update the host file to include webserver's IP and ELKserver IP
 - Run the playbook, and navigate to _HTTP://{elk's IP}:5601 to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? elk.yml Where do you copy it? etc/ansible/
 - _Which file do you update to make Ansible run the playbook on a specific machine?ansible-playbook elk.yml How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - _Which URL do you navigate to in order to check that the ELK server is running?
