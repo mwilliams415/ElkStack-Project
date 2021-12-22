@@ -85,3 +85,8 @@ Metricbeat consists of modules and metricsets. A Metricbeat module defines the b
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
+SSH into the control node and follow the steps below:
+- Copy the playbook file to control node
+- Update the host file to include webserver's and the ELKserver 
+- Run the playbook, and navigate to _HTTP://13.78.148.218:5601 to check that the installation worked as expected.
+
