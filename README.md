@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _elk.yml__ file may be used to install only certain pieces of it, such as Filebeat.
 
-  : Links to playbooks etc/ansible/elk.yml.
+  
 
 This document contains the following details:
 - Description of the Topology
@@ -29,7 +29,6 @@ Filebeat monitors the log files or locations that you specify, collects log even
 Metricbeat records the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
@@ -86,14 +85,3 @@ Metricbeat consists of modules and metricsets. A Metricbeat module defines the b
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
-SSH into the control node and follow the steps below:
-- Copy the etc/ansible file to 
-- Update the host file to include webserver's and ELKserver 
-- Run the playbook, and navigate to _HTTP://{elk's IP}:5601 to check that the installation worked as expected.
-
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? elk.yml Where do you copy it? etc/ansible/
-- _Which file do you update to make Ansible run the playbook on a specific machine?ansible-playbook elk.yml How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
-
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
